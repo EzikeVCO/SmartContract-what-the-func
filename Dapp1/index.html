@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./node_modules/web3/dist/web3.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // initialise web3 set it to localhost
+        var web3 = new Web3(new web3.providers.HttpProvider("http://localhost:8545"));
+        // connect web3 to defaultaccount (first contract on the blockchain)
+        web3.eth.defaultAccount = web3.eth.account[0];
+      var fooContract =  web3.eth.contract("past your ABI")
+    </script>
+</body>
+</html>
